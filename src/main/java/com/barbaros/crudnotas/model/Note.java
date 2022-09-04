@@ -1,4 +1,4 @@
-package com.barbaros.crudnotas;
+package com.barbaros.crudnotas.model;
 
 import org.springframework.data.annotation.TypeAlias;
 
@@ -30,11 +30,7 @@ public class Note {
         return this.content;
     }
 
-    public void setTitle(String title){
-        this.title = title;
-    }
-
-    public void setContent(String content){
-        this.content = content;
+    public Long getId(){
+        return this.id;
     }
 }
